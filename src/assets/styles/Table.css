@@ -1,0 +1,26 @@
+.Table {
+  height: 90%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 2vh;
+  margin-top: 1%;
+  border-radius: 2%/4%;
+  overflow: hidden;
+}
+
+.Table__tile {
+  color: var(--text-accent);
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  font-size: x-large;
+  text-decoration: none;
+  background: var(--common-interactive);
+  padding: 4%;
+}
+
+.Table__tile:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,16 @@
+.Action-block{
+  box-sizing: border-box;
+  width: 65%;
+  height: 100%;
+  background-color: var(--common-background);
+  padding: 1%;
+  border-radius: 2%/4%;
+}
+
+.Action-block__header{
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  height: 8%;
+  width: 100%;
+}

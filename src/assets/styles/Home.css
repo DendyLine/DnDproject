@@ -1,0 +1,7 @@
+.Home-main{
+  display: flex;
+  box-sizing: border-box;
+  height: 95vh;
+  padding: 8% 4%;
+  justify-content: space-between;
+}
