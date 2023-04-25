@@ -1,7 +1,24 @@
-.Home-main{
+.Home{
   display: flex;
   box-sizing: border-box;
-  height: 95vh;
-  padding: 8% 4%;
+  height: 100vh;
+  padding: 19vh;
   justify-content: space-between;
+}
+
+.Home__Action-block{
+  box-sizing: border-box;
+  width: 65%;
+  height: 100%;
+  background-color: var(--common-background);
+  padding: 1.7vh;
+  border-radius: 2%/4%;
+}
+
+.Home__Action-block__header{
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  height: 8%;
+  width: 100%;
 }

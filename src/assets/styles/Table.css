@@ -4,23 +4,25 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  grid-gap: 2vh;
-  margin-top: 1%;
+  grid-gap: 1.7vh;
+  margin-top: 1.2%;
   border-radius: 2%/4%;
   overflow: hidden;
 }
 
-.Table__tile {
+.Home__Table__tile {
   color: var(--text-accent);
   display: flex;
   align-items: end;
   justify-content: end;
   font-size: x-large;
-  text-decoration: none;
   background: var(--common-interactive);
-  padding: 4%;
+  padding: 1.7vh;
+  vertical-align: bottom;
+  line-height: calc(100% - 0.2em);
+  font-weight: bold;
 }
 
-.Table__tile:hover {
+.Home__Table__tile:hover {
   transform: scale(1.1);
 }

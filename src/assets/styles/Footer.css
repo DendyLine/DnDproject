@@ -1,9 +1,0 @@
-.Footer {
-  display: flex;
-  justify-content: center;
-  height: 5vh;
-}
-
-.Footer p {
-  color: var(--text-common);
-}
