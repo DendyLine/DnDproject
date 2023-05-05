@@ -7,6 +7,9 @@
 }
 
 .Home__Action-block{
+  display: flex;
+  flex-direction: column;
+  gap: 1.7vh;
   box-sizing: border-box;
   width: 65%;
   height: 100%;
@@ -19,6 +22,32 @@
   display: flex;
   box-sizing: border-box;
   justify-content: space-between;
+  align-items: center;
   height: 8%;
   width: 100%;
+}
+
+.Home h1{
+  font-size: 1100%;
+  margin: 0 0 0 -2%;
+}
+
+.Home h2{
+  font-size: 570%;
+  margin-top: -3.5rem;
+}
+
+.Home .Searchbar{
+  width: 40%;
+  height: 60%;
+}
+
+
+.Home .Table{
+  height: 92%;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+}
+.Home .Table__tile{
+  height: auto;
 }

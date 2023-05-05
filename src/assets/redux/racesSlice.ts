@@ -1,0 +1,48 @@
+import { createSlice } from '@reduxjs/toolkit';
+
+
+const racesSlice = createSlice({
+  name: 'races',
+  initialState: {
+    tiles: [
+      {id: 1, name: 'Ааракокра', classname: 'Table__tile', link: '/races/aarakocra'},
+      {id: 2, name: 'Аасимар', classname: 'Table__tile', link: '/races/aasimar'},
+      {id: 3, name: 'Автогном', classname: 'Table__tile', link: '/races/autognome'},
+      {id: 4, name: 'Багбір', classname: 'Table__tile', link: '/races/bugbear'},
+      {id: 5, name: 'Ведалкен', classname: 'Table__tile', link: '/races/vedalken'},
+      {id: 6, name: 'Вердан', classname: 'Table__tile', link: '/races/verdan'},
+      {id: 7, name: 'Гібрид симіків', classname: 'Table__tile', link: '/races/simic_hybrid'},
+      {id: 8, name: 'Ґіт', classname: 'Table__tile', link: '/races/gith'},
+      {id: 9, name: 'Ґіфф', classname: 'Table__tile', link: '/races/giff'},
+      {id: 10, name: 'Гном', classname: 'Table__tile', link: '/races/gnome'},
+      {id: 11, name: 'Ґоблін', classname: 'Table__tile', link: '/races/goblin'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+      {id: 12, name: 'Голіаф', classname: 'Table__tile', link: '/races/goliath'},
+    ],
+  },
+  reducers: {},
+});
+export default racesSlice.reducer;

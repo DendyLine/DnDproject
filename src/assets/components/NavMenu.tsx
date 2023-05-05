@@ -1,7 +1,11 @@
 import { NavLink } from 'react-router-dom';
 
 
-export const NavMenu = () => {
+interface INavMenuProps{
+  showNavMenu: boolean;
+}
+
+export const NavMenu = (props: INavMenuProps) => {
   const currentPath = window.location.pathname;
 
   if (currentPath === '/') {
@@ -9,7 +13,7 @@ export const NavMenu = () => {
   }
 
   return (
-    <div className="Nav-menu">
+    <div className={`NavMenu ${props.showNavMenu ? 'Nav-menu' : 'Nav-menu--closed'}`}>
       <div className='Nav-menu__header'>
         <h1>DnD</h1>
         <h2>pechera</h2>
