@@ -28,13 +28,13 @@
 }
 
 .Home h1{
-  font-size: 1100%;
+  font-size: 7rem;
   margin: 0 0 0 -2%;
 }
 
 .Home h2{
-  font-size: 570%;
-  margin-top: -3.5rem;
+  font-size: 3.5rem;
+  margin-top: -2.2rem;
 }
 
 .Home .Searchbar{

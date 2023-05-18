@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import {NavLink, useLocation} from 'react-router-dom';
 
 
 interface INavMenuProps{
@@ -6,16 +6,16 @@ interface INavMenuProps{
 }
 
 export const NavMenu = (props: INavMenuProps) => {
-  const currentPath = window.location.pathname;
+  const currentPath = useLocation();
 
-  if (currentPath === '/') {
+  if (currentPath.pathname === '/') {
     return null;
   }
 
   return (
-    <div className={`NavMenu ${props.showNavMenu ? 'Nav-menu' : 'Nav-menu--closed'}`}>
+    <div className={props.showNavMenu ? 'Nav-menu' : 'Nav-menu--closed'}>
       <div className='Nav-menu__header'>
-        <h1>DnD</h1>
+       <NavLink to='/'><h1>DnD</h1></NavLink>
         <h2>pechera</h2>
       </div>
       <nav>

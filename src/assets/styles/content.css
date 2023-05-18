@@ -8,11 +8,11 @@
 .content__expander{
   border: none;
   position: absolute;
-  top: 2vh;
-  left: 2vh;
-  background-color: var(--common-background);
+  top: 0.4rem;
+  left: 0.4rem;
+  background-color: transparent;
   color: var(--text-common);
-  font-size: xx-large;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -39,11 +39,17 @@
   gap: 3.7vh;
   height: 90%;
   width: 100%;
-  overflow-y: hidden;
+  overflow: hidden;
   max-height: 100vh;
 }
 
 .content h2 {
   margin-top: 0;
   color: black;
+}
+
+.content__action-block__footer--expand{
+  display: flex;
+  height: 98%;
+  gap: 0.6rem;
 }
