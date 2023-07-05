@@ -18,6 +18,10 @@
   width: 21%;
 }
 
+.Table--landed{
+  background-color: black;
+}
+
 .Table::-webkit-scrollbar {
   width: 3.5vh;
   background-color: var(--common-interactive);

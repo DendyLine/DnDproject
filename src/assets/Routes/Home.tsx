@@ -1,4 +1,4 @@
-import { Auth, InfoBlock, Searchbar, Table } from '../components';
+import {InfoBlock, Searchbar, Table } from '../components';
 import { useAppSelector } from '../redux/store';
 
 
@@ -11,9 +11,8 @@ export const Home = () => {
         <div className="Home__Action-block">
           <div className='Home__Action-block__header'>
             <Searchbar/>
-            <Auth/>
           </div>
-          <Table tiles={tiles}/>
+          <Table classname='' tiles={tiles}/>
         </div>
       </main>
     </div>
