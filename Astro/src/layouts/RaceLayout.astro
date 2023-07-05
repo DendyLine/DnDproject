@@ -1,0 +1,22 @@
+---
+import RacesLayout from '../layouts/RacesLayout.astro'
+const {frontmatter} = Astro.props
+---
+<RacesLayout>
+    <div class='race'>
+        <div class='race__picture'><img src={frontmatter.imgSrc} alt={frontmatter.imgAlt}/></div>
+        <div class='race__basic'>
+            <div class='race__basic__title'>{frontmatter.title}</div>
+            <div class='race__basic__info'>
+                <div class='race__option'><b>Тип:</b> {frontmatter.type}</div>
+                <div class='race__option'><b>Характеристики:</b> {frontmatter.char}</div>
+                <div class='race__option'><b>Розмір:</b> {frontmatter.size}</div>
+                <div class='race__option'><b>Швидкість:</b> {frontmatter.speed}</div>
+                <div class='race__option'><b>Особливості:</b> {frontmatter.traits}</div>
+                <div class='race__option'><b>Мови:</b> {frontmatter.languages}</div>
+                <div class='race__option'><b>Тривалість життя:</b> {frontmatter.lifeDur}</div>
+                <div class='race__option'><b>Світогляд:</b> {frontmatter.ideology}</div></div>
+        </div>
+        <div class='race__desc'>Опис <p><slot/></p></div>
+    </div>
+</RacesLayout>

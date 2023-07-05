@@ -1,0 +1,57 @@
+.Nav-menu{
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 50vh;
+  padding: 1.5rem;
+}
+
+#NavMenu:target{
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  flex-direction: column;
+  width: 0;
+  height: 0;
+  padding: 0;
+}
+
+.Nav-menu--closed{
+
+}
+
+.Nav-menu__header{
+  margin-bottom: 3vh;
+}
+
+.Nav-menu ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Nav-menu--closed ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Nav-menu nav{
+  width: 100%;
+}
+
+.Nav-menu__element{
+  display: block;
+  font-size: 1rem;
+  width: 88%;
+  background: rgba(29, 40, 29, 0.3);
+  margin: 0.3vh 0;
+  padding: 1vh;
+  border-radius: 40px/50px;
+}
+
+.Nav-menu__element:hover{
+  transform: scale(1.1);
+}

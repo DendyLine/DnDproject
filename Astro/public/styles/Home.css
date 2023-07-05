@@ -1,0 +1,53 @@
+.Home{
+  display: flex;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 19vh;
+  justify-content: space-between;
+}
+
+.Home__Action-block{
+  display: flex;
+  flex-direction: column;
+  gap: 1.7vh;
+  box-sizing: border-box;
+  width: 65%;
+  height: 100%;
+  background-color: var(--common-background);
+  padding: 1.7vh;
+  border-radius: 2%/4%;
+}
+
+.Home__Action-block__header{
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  height: 8%;
+  width: 100%;
+}
+
+.Home h1{
+  font-size: 7rem;
+  margin: 0 0 0 -2%;
+}
+
+.Home h2{
+  font-size: 3.5rem;
+  margin-top: -2.2rem;
+}
+
+.Home .Searchbar{
+  width: 40%;
+  height: 60%;
+}
+
+
+.Home .Table{
+  height: 92%;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+}
+.Home .Table__tile{
+  height: auto;
+}

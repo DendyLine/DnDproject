@@ -1,0 +1,17 @@
+---
+import {Searchbar, Table} from "../components";
+import MainLayout from './MainLayout.astro'
+---
+<MainLayout>
+<div class='content'>
+    <div class='content__action-block'>
+        <div class='content__action-block__header'><a href='/races'><h2>Раси</h2></a></div>
+        <div class='content__action-block__footer'>
+            <Searchbar/>
+            <div class='content__action-block__footer--expand'>
+                <slot/>
+            </div>
+        </div>
+    </div>
+</div>
+</MainLayout>

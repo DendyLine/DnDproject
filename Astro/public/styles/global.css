@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    background: url('/public/Background.png') center center no-repeat;
+    background-size: cover;
+    font-family: 'Arial', serif;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.rounded{
+    border-radius: 40px/50px;
+}
+
+
+
+:root {
+    --common-background: #E8E8E6;
+    --accent-bacground: #4A674B;
+    --more-accent-background: #bab7b2;
+    --common-interactive: #ccc9c5;
+    --accent-interactive: #4A674B;
+    --text-common: #FFF;
+    --text-accent: #000;
+}
+
+* {
+    transition: 0.3s ease-in-out;
+}
