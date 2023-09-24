@@ -30,7 +30,7 @@
     background-color: var(--more-accent-background);
     font-size: 0.8rem;
     width: 15rem;
-    padding: 0.3rem 0;
+    padding: 0.3rem 0 0.3rem 0.3rem;
 }
 
 .race__desc {

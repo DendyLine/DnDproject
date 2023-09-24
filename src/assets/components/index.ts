@@ -1,5 +1,4 @@
 import { InfoBlock } from './InfoBlock';
-import { Footer } from './Footer';
 import { Table } from './Table';
 import { Searchbar } from './Searchbar';
 import { Auth } from './Auth';
@@ -11,6 +10,5 @@ export {
   Searchbar,
   Auth,
   Table,
-  Footer,
   NavMenu,
 }

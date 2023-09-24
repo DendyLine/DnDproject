@@ -18,6 +18,7 @@ body {
 :root {
   --common-background: #E8E8E6;
   --accent-bacground: #4A674B;
+  --more-accent-background: #bab7b2;
   --common-interactive: #ccc9c5;
   --accent-interactive: #4A674B;
   --text-common: #FFF;
