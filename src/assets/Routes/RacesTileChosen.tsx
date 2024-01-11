@@ -1,10 +1,16 @@
 import { useParams } from 'react-router-dom';
 import { useAppSelector } from '../redux/store';
+import {useOutlet} from "react-router-dom";
 
+interface OutletContext {
+    raceClassname: string;
+}
 export const RacesTileChosen = () => {
     const { id } = useParams();
     const races = useAppSelector(state => state.races.tiles);
     const race = races.find(race => race.id === id);
+    // const outletContext = useOutlet<OutletContext>();
+    // const dynamicRaceClassname = outletContext?.raceClassname || '';
     return (
         <div className='race'>
                 <div className='race__picture'><img src={race!.imgSrc} alt={race!.imgAlt}/></div>

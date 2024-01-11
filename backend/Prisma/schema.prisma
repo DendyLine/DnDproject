@@ -1,0 +1,25 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Race {
+  id        Int    @id @default(autoincrement())
+  name      String
+  link      String
+  imgSrc    String @default("")
+  imgAlt    String @default("")
+  type      String
+  char      String
+  size      String
+  speed     String
+  traits    String
+  languages String
+  lifeDur   String
+  ideology  String
+  desc      String
+}

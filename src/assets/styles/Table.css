@@ -4,9 +4,19 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.7vh;
-  border-radius: 2%/4%;
+  border-radius: 1.5rem;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+
+.Table--row{
+  width: 72vw;
+  grid-template-rows: repeat(1, 1fr);
+  /*grid-template-columns: repeat(auto-fit, minmax(177px, 177px));*/
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .Table--expanded{
@@ -35,10 +45,19 @@
   border-left: solid 1.5vh var(--common-background);
 }
 
+.Table--row::-webkit-scrollbar {
+  border-left: none
+}
+
+.Table--row::-webkit-scrollbar-thumb {
+  border-left: none
+}
+
 .Table__tile {
   color: var(--text-accent);
   display: flex;
   height: 10vh;
+  min-width: 134px;
   align-items: end;
   justify-content: end;
   font-size: 1rem;
@@ -50,6 +69,11 @@
 
 .Table__tile:hover {
   transform: scale(1.1);
+}
+
+.Table__tile:focus{
+  background-color: #4A674B;
+  color: var(--text-common);
 }
 
 .RacesTileChosen{

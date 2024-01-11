@@ -2,10 +2,11 @@ import { NavLink } from 'react-router-dom';
 
 
 interface ITableProps{
-  tiles: {id: string,
-  name: string,
-  link: string,}[],
-  classname: string | undefined,
+  tiles: {
+    id: string,
+    name: string,
+    link: string,}[],
+  classname: string | undefined
  }
 
 export const Table = (props: ITableProps) => {

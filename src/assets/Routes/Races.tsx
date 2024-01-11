@@ -12,13 +12,14 @@ export const Races = (props: IContentProps) => {
     const tiles = useAppSelector(state => state.races.tiles);
     const location = useLocation()
     const tableTileId = location.pathname.split('/races').pop();
-    const showTable = !tableTileId || !props.showNavMenu;
     let tableClassName;
-    if(props.showNavMenu){
-        tableClassName = ''
-    }else if(tableTileId){
+    let contentActionBlockFooterExpand;
+    let raceClassname;
+    if(tableTileId && props.showNavMenu){
+       tableClassName='Table--row'; contentActionBlockFooterExpand = 'content__action-block__footer--reduced'; raceClassname = 'race--reduced'
+    }else if(tableTileId && !props.showNavMenu){
         tableClassName = 'Table--reduced'
-    }else if(showTable){
+    }else if(!tableTileId && !props.showNavMenu){
         tableClassName = 'Table--expanded'
     }
     return (
@@ -28,9 +29,9 @@ export const Races = (props: IContentProps) => {
                 <div className='content__action-block__header'><NavLink to='/races'><h2>Раси</h2></NavLink></div>
                 <div className='content__action-block__footer'>
                     <Searchbar/>
-                    <div className='content__action-block__footer--expand'>
-                        <Outlet/>
-                        {showTable && <Table tiles={tiles} classname={tableClassName}/>}
+                    <div className={`content__action-block__footer--expand ${contentActionBlockFooterExpand}`}>
+                        <Outlet context={raceClassname}/>
+                        <Table tiles={tiles} classname={tableClassName}/>
                     </div>
                 </div>
             </div>
