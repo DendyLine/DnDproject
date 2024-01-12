@@ -44,15 +44,23 @@
 
 .race__desc::-webkit-scrollbar {
     width: 3.5vh;
-    background-color: var(--common-interactive);
+    background-color: transparent;
     border-radius: 4px;
     border-left: solid 1.5vh var(--common-interactive);
 }
 
 .race__desc::-webkit-scrollbar-thumb {
-    background-color: var(--text-common);
+    background-color: transparent;
     border-radius: 4px;
     border-left: solid 1.5vh var(--common-interactive);
+}
+
+.race__desc:hover::-webkit-scrollbar-thumb {
+    background-color: var(--text-common); /* Колір скролбару при наведенні миші */
+}
+
+.race__desc:hover::-webkit-scrollbar {
+    background-color: var(--common-interactive); /* Колір скролбару при наведенні миші */
 }
 
 .race__desc p{

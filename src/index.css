@@ -28,3 +28,7 @@ body {
 * {
   transition: 0.3s ease-in-out;
 }
+
+::selection{
+  color: var(--accent-bacground);
+}
