@@ -1,16 +1,11 @@
 import { useParams } from 'react-router-dom';
 import { useAppSelector } from '../redux/store';
-import {useOutlet} from "react-router-dom";
 
-interface OutletContext {
-    raceClassname: string;
-}
+
 export const RacesTileChosen = () => {
     const { id } = useParams();
     const races = useAppSelector(state => state.races.tiles);
     const race = races.find(race => race.id === id);
-    // const outletContext = useOutlet<OutletContext>();
-    // const dynamicRaceClassname = outletContext?.raceClassname || '';
     return (
         <div className='race'>
                 <div className='race__picture'><img src={race!.imgSrc} alt={race!.imgAlt}/></div>
@@ -21,16 +16,14 @@ export const RacesTileChosen = () => {
                         <div className='race__option'><b>Характеристики:</b> {race!.char}</div>
                         <div className='race__option'><b>Розмір:</b> {race!.size}</div>
                         <div className='race__option'><b>Швидкість:</b> {race!.speed}</div>
-                        <div className='race__option'><b>Особливості:</b> {race!.traits}</div>
+                        <div className='race__option'><b>Особливості:</b>{race!.traits.map((trait) =>(<a href={trait.href}>{trait.name}</a>))}</div>
                         <div className='race__option'><b>Мови:</b> {race!.languages}</div>
                         <div className='race__option'><b>Тривалість життя:</b> {race!.lifeDur}</div>
                         <div className='race__option'><b>Світогляд:</b> {race!.ideology}</div>
                     </div>
                 </div>
-                <div className='race__desc'>Опис
-                    <p>
-                        {race!.desc}
-                    </p>
+                <div className='race__desc'>
+                        <div dangerouslySetInnerHTML={{ __html: race!.desc }}></div>
                 </div>
             </div>
     );

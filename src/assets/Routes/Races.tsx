@@ -28,7 +28,7 @@ export const Races = (props: IContentProps) => {
             <div className='content__action-block'>
                 <div className='content__action-block__header'><NavLink to='/races'><h2>Раси</h2></NavLink></div>
                 <div className='content__action-block__footer'>
-                    <Searchbar/>
+                    <Searchbar races={tiles}/>
                     <div className={`content__action-block__footer--expand ${contentActionBlockFooterExpand}`}>
                         <Outlet context={raceClassname}/>
                         <Table tiles={tiles} classname={tableClassName}/>

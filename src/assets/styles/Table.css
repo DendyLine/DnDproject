@@ -12,8 +12,8 @@
 
 .Table--row{
   width: 72vw;
+  height: 83vh;
   grid-template-rows: repeat(1, 1fr);
-  /*grid-template-columns: repeat(auto-fit, minmax(177px, 177px));*/
   grid-auto-flow: column;
   overflow-x: auto;
   overflow-y: hidden;

@@ -30,5 +30,6 @@ body {
 }
 
 ::selection{
-  color: var(--accent-bacground);
+  background-color: var(--accent-bacground);
+  color: var(--text-common);
 }

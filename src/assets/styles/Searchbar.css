@@ -1,11 +1,34 @@
-.Searchbar{
+.Searchbar {
   display: flex;
   align-items: center;
   width: 100%;
   height: 5%;
+  position: relative;
 }
 
-.Searchbar input{
+.Searchbar input {
   width: 100%;
   height: 1.3rem;
+}
+
+/* Стилі для підказок */
+.react-autosuggest__suggestions-container {
+  position: absolute;
+  top: 100%; /* Відстань від нижнього краю input */
+  left: 0;
+  right: 0;
+  background-color: #fff; /* Колір фону підказок */
+  border: 1px solid #ccc; /* Обрамлення підказок */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.react-autosuggest__suggestion {
+  list-style-type: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.react-autosuggest__suggestion:hover {
+  background-color: #f0f0f0;
 }

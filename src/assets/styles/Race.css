@@ -2,7 +2,7 @@
     display: flex;
     box-sizing: border-box;
     width: 100%;
-    min-height: 75%;
+    min-height: 78%;
     max-height: 93%;
     background-color: var(--common-interactive);
     border-radius: 1.5rem;
@@ -66,4 +66,8 @@
 .race__desc p{
     font-size: 1rem;
     color: var(--text-accent);
+}
+
+.race__basic__info a:hover{
+    color: var(--accent-interactive);
 }
