@@ -19,7 +19,7 @@
   right: 0;
   background-color: #fff; /* Колір фону підказок */
   border: 1px solid #ccc; /* Обрамлення підказок */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }
 
